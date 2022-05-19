@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/login_bg.jpg) no-repeat center center/cover;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginAndRegBox .title-box {
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+/* 给两个div绑定点击事件，点击了对应按钮，让对应的div进行显示，另外一个进行隐藏 */
+.reg-box {
+    display: none;
+}
+
+/* - 给 表单域设置内边距，左右留一点缝隙
+- 给下面的 links 设置 flex 布局，让里面 a 标签 居右边显示
+- 修改 a 标签文字大小
+ */
+.layui-form {
+    padding: 0 30px;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+/* 绘制文本框前面的小图标的 css */
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-input {
+    padding-left: 32px;
+}
